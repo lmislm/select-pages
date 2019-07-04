@@ -1,5 +1,13 @@
 # select-pages
 
+> Vue 2.x component for mutiple select pages from list
+
+[![License](https://img.shields.io/github/license/lmislm/select-pages.svg?maxAge=3600)](https://github.com/lmislm/select-pages)
+
+## Demo
+
+[Click Here](https://lmislm.github.io/select-pages)
+
 ## Project setup
 ```
 npm install
@@ -15,15 +23,6 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
+**Hope will usefull for you all.**
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Copyright © 2019 Built with ❤️ by lmislm

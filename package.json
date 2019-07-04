@@ -1,12 +1,26 @@
 {
   "name": "select-pages",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "author": "lmislm (https://github.com/lmislm/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmislm/select-pages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lmislm/select-pages/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "select",
+    "select pages",
+    "split pages"
+  ],
   "dependencies": {
     "core-js": "^2.6.5",
     "lodash": "^4.17.11",
