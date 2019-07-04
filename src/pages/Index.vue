@@ -2,7 +2,7 @@
 <template>
   <div class="index">
     输入需要选择的图片ID:<input type="text" placeholder="输入格式如：2,4-5" v-model="pageId">
-    <SelectPages :pages="mockData.data" :pagesId="pageId"></SelectPages>
+    <SelectPages :pages="mockData.data" :pagesId.sync="pageId"></SelectPages>
   </div>
 </template>
 
