@@ -9,7 +9,9 @@ const name = 'vue Select Pages'
 const port = process.env.port || process.env.npm_config_port || 9966 // dev port
 
 module.exports = {
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production' 
+    ? '/select-pages'
+    : '/',
   outputDir: 'dist',
   assetsDir: 'static',
   productionSourceMap: false,
