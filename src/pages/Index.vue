@@ -1,8 +1,9 @@
 <!-- Index -->
 <template>
   <div class="index">
-    输入需要选择的图片ID:<input type="text" placeholder="输入格式如：2,4-5" v-model="pageId">
-    <SelectPages :pages="mockData.data" :pagesId.sync="pageId"></SelectPages>
+    <div class="header">输入需要选择的图片ID: <input type="text" placeholder="输入格式如：2,4-5" v-model="pageId"></div>
+    <div class="container">{{pagesArr}}</div>
+    <SelectPages :pages="mockData.data" :pagesId.sync="pageId" @onSelectMultiple="handleSelectedPages"></SelectPages>
   </div>
 </template>
 
@@ -16,7 +17,8 @@ export default {
   data () {
     return {
       mockData: [],
-      pageId: ''
+      pageId: '',
+      pagesArr: []
     }
   },
   watch: {
@@ -25,6 +27,9 @@ export default {
     }
   },
   methods: {
+    handleSelectedPages (pagesArr) {
+      this.pagesArr = pagesArr
+    },
     init () {
       // mock数据
       let Random = Mock.Random
@@ -51,5 +56,13 @@ export default {
 <style lang='less' scoped>
 .index {
   text-align: center;
+  .header {
+    margin: 10px;
+  }
+  .container {
+    height: 80px;
+    overflow: scroll;
+    border: 1px solid black;
+  }
 }
 </style>
